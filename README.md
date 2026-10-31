@@ -30,7 +30,7 @@ The build creates `dist/`. Only `dist/` is published. Netlify configuration is i
 
 ## Deployment
 
-Production branch: `main`. Build command: `npm run build`; publish directory: `dist`.
+Production branch: `main`. Build command: `npm run build && npm run check`; publish directory: `dist`.
 
 Netlify project: `team9696` (`48ed3d34-aea9-4d05-a7cd-3278bf61a226`).
 
@@ -41,7 +41,7 @@ npm run check
 netlify deploy --prod --dir dist --no-build
 ```
 
-When continuous deployment is connected, pushes to `main` publish automatically. Manual production deploys on a Git-connected project are replaced by the next production branch deploy.
+Continuous deployment is connected through a read-only repository deploy key and a GitHub webhook. Pushes to `main` publish automatically after the build and link checks pass. Pull requests receive Deploy Previews. Manual production deploys on a Git-connected project are replaced by the next production branch deploy.
 
 ## Content provenance
 
