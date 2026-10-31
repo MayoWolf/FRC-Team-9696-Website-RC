@@ -1,28 +1,35 @@
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Lilita One";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/dm-sans-400.ttf") format("truetype");
+  src: url("/assets/lilita-one-400.ttf") format("truetype");
 }
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/nunito-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/assets/dm-sans-600.ttf") format("truetype");
+  src: url("/assets/nunito-600.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/space-grotesk-500.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Space Grotesk";
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/assets/space-grotesk-700.ttf") format("truetype");
+  src: url("/assets/nunito-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/nunito-800.ttf") format("truetype");
 }

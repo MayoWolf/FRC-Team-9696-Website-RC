@@ -44,10 +44,6 @@ for (const page of pages) {
   }
   for (const tag of html.matchAll(/<img\b[^>]*>/g))
     assert.match(tag[0], /\balt="[^"]*"/);
-  for (const [, panel] of html.matchAll(
-    /role="tab"[^>]*aria-controls="([^"]+)"/g,
-  ))
-    assert.ok(ids.includes(panel));
   assert.ok(
     !/TODO|Lorem ipsum|example\.com/.test(html),
     `${page}: placeholder text`,
@@ -56,5 +52,5 @@ for (const page of pages) {
 const cal = await readFile("dist/assets/kickoff.ics", "utf8");
 assert.match(cal, /DTSTART:20270109T170000Z/);
 console.log(
-  `Passed: ${pages.length} pages, ${links} internal links/assets, anchors, heading/metadata checks, tab references, image alternatives, and calendar time.`,
+  `Passed: ${pages.length} pages, ${links} internal links/assets, anchors, heading/metadata checks, image alternatives, and calendar time.`,
 );

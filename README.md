@@ -4,7 +4,7 @@ The Hamichanics website for Alexander Hamilton High School in Los Angeles.
 
 **Live:** https://team9696.netlify.app
 
-Six static pages: home, team, seasons, support, join/mentor, and resources. Includes responsive navigation, a keyboard-accessible discipline explorer, native FAQ disclosures, and a downloadable 2027 FIRST kickoff calendar entry. No accounts, tracking, or third-party JavaScript.
+Six static pages: home, team, seasons, support, join/mentor, and resources. The design follows the team’s HAMI mascot: rounded silhouettes, green offset shadows, blue visor accents, playful lettering, and a team noticeboard. Includes responsive navigation, native FAQ disclosures, and a downloadable 2027 FIRST kickoff calendar entry. No accounts, tracking, or third-party JavaScript.
 
 ## Development
 
@@ -20,13 +20,13 @@ Open http://127.0.0.1:9696. The development server rebuilds once at startup; res
 
 ## Editing
 
-- `src/content.mjs`: public team contact, external links, and robotics disciplines.
+- `src/content.mjs`: public team contact, external links, and team details.
 - `scripts/build.mjs`: page content, shared navigation/footer, metadata, sitemap, calendar generation.
 - `src/style.css`: responsive layouts and visual design.
-- `src/app.js`: mobile menu and accessible tabs.
-- `public/assets/`: locally hosted mascot, icon, and fonts.
+- `src/app.js`: mobile menu.
+- `public/assets/`: locally hosted mascot, matching robot icon, and fonts.
 
-The build creates `dist/`. Only `dist/` is published. Netlify configuration is in `netlify.toml`. Local `.netlify/` state is ignored by Git.
+The build creates `dist/` and fingerprints CSS, JavaScript, fonts CSS, and the icon so returning visitors receive the updated design. Only `dist/` is published. Netlify configuration is in `netlify.toml`. Local `.netlify/` state is ignored by Git.
 
 ## Deployment
 
@@ -59,6 +59,6 @@ Original descriptive copy illustrates the work and learning involved in robotics
 
 ## License
 
-Website source code and original icon: MIT. See `LICENSE`.
+Website source code: MIT. See `LICENSE`.
 
-The team mascot is an existing team asset and is **not** relicensed under MIT. Fonts are licensed under the SIL Open Font License. See `THIRD_PARTY_NOTICES.md` and `public/assets/licenses/`.
+The team mascot and the icon adapted from it are **not** relicensed under MIT. Fonts are licensed under the SIL Open Font License. See `THIRD_PARTY_NOTICES.md` and `public/assets/licenses/`.
