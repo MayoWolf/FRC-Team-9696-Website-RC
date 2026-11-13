@@ -34,14 +34,7 @@ Production branch: `main`. Build command: `npm run build && npm run check`; publ
 
 Netlify project: `team9696` (`48ed3d34-aea9-4d05-a7cd-3278bf61a226`).
 
-```sh
-netlify link --id 48ed3d34-aea9-4d05-a7cd-3278bf61a226
-npm run build
-npm run check
-netlify deploy --prod --dir dist --no-build
-```
-
-Continuous deployment is connected through a read-only repository deploy key and a GitHub webhook. Pushes to `main` publish automatically after the build and link checks pass. Pull requests receive Deploy Previews. Manual production deploys on a Git-connected project are replaced by the next production branch deploy.
+Netlify builds automatically when GitHub receives a push. Pushes to `main` publish to the production site after the build and link checks pass. Other branches get separate Netlify URLs.
 
 ## Content provenance
 
